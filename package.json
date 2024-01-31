@@ -1,0 +1,28 @@
+{
+  "name": "newnodejs",
+  "version": "1.0.0",
+  "description": "a newnodejs",
+  "main": "Saimple.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ravi14pulivarthi/Nodejs.git"
+  },
+  "keywords": [
+    "Code",
+    "by",
+    "code"
+  ],
+  "author": "RavikumarPulivarthi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ravi14pulivarthi/Nodejs/issues"
+  },
+  "homepage": "https://github.com/Ravi14pulivarthi/Nodejs#readme",
+  "dependencies": {
+    "color": "^4.2.3",
+    "simple-node-logger": "^21.8.12"
+  }
+}
