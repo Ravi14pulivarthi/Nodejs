@@ -1,5 +1,5 @@
 
- const http=require('http')
+ const http = require('http')
 
   http.createServer((req,resp)=>{
      resp.writeHead(200,{'content':"application/json"})
