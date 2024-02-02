@@ -1,4 +1,4 @@
-  console.log(process.argv[4])
+//   console.log(process.argv[4])
 
 
 
@@ -14,5 +14,5 @@ const fs = require('fs')
     fs.unlinkSync(input[3])
  }
   else{
-    console.log("invalied thing")
+    console.log("invalied")
   }
