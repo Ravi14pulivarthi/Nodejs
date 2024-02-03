@@ -3,7 +3,8 @@
    const app=express()
 
     app.get("",(req,resp)=>{
-        resp.send("hii welcome : this is home page")
+         console.log(req.query.name)
+        resp.send("hii welcome : " +req.query.name)
     })
 
      app.get("/about",(req,resp)=>{
@@ -15,3 +16,5 @@
      })
       
       app.listen(5000)
+
+ 
