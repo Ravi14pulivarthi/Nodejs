@@ -1,25 +1,25 @@
 const express = require("express");
-
+ const reqfilter=require("./26Middleware")
 const app = express();
 
-const reqfilter = (req, resp, next) => {
-  if (!req.query.age) {
-    resp.send("plese provide your  age");
-  } 
-  else if (req.query.age<18) {
-    resp.send(" the user must be above  age of 18");
-  } 
-  else {
-    next();
-  }
-};
-app.use(reqfilter);
+ const route=express.Router()
 
+
+// app.use(reqfilter);
+ route.use(reqfilter)
 app.get("/", (req, resp) => {
   resp.send("welcome to home page");
 });
 
-app.get("/ravi", (req, resp) => {
+route.get("/ravi", (req, resp) => {
   resp.send("hii ravi is good boy ");
 });
+ app.get("/about",(req,resp)=>{
+    resp.send("about page is welcomming you")
+ })
+ route.get("/contact",(req,resp)=>{
+    resp.send(" well come to concat page ")
+ })
+
+  app.use("/",route)
 app.listen(5000);
