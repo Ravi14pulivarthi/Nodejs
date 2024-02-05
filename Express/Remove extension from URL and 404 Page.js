@@ -20,9 +20,12 @@ const express=require("express")
     })
     // one
      app.get('/profile',(req,resp)=>{
-        const user={name:"Ravikumar Pulivarthi",email:"ravi@1998,gail.com",age:25,study:"MCA"}
+        const user={name:"Ravikumar Pulivarthi",email:"ravi@1998,gail.com",age:25,study:"MCA",skils:["html","css",'javascript','reactjs','nodejs','sql']}
         resp.render(`${views}/profile`,{user})
      })
+      app.get('./login',(res,resp)=>{
+        resp.render("login")
+      })
     app.get('*',(req,resp)=>{
         resp.sendFile(`${publicepath}/error.html`)
     })
