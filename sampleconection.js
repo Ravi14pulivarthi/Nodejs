@@ -1,4 +1,4 @@
-const {MongoClient } = require("mongobd");
+const {MongoClient} = require("mongobd");
 const url = "mongodb://localhost:27017";
 const batabasename = "E-commers";
 const client = new MongoClient(url);
