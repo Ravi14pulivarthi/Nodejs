@@ -1,8 +1,9 @@
-const  dbconnect= require("./mongodb");
 
-const updatedata = async () => {
-  let data = await dbconnect();
-  let result = await data.updateOne({name: "mi"},{$set:{name:"mi max pro"}});
-  console.log(result);
-};
-updatedata();
+ const dbconnect=require("./mongodb")
+
+
+    const updatedata= async()=>{
+       let data=await dbconnect()
+        data.updateOne({name:"galaxi",model:"samutoch"},{$set:{name:"mackbook",model:"ultrapro"}})
+    }
+updatedata()
