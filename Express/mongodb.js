@@ -7,7 +7,7 @@
 
 async function dbcollection(){
     let result=await client.connect()
-    db=result.db(databasename)
+    db= result.db(databasename)
     return db.collection("Products")
 }
 
