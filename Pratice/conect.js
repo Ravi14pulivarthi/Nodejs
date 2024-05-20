@@ -5,12 +5,11 @@ const url="mongodb://0.0.0.0:27017"
 
 
 
-   async function getconect(){
+   async function getdata(){
      let result=await client.connect()
     db=result.db(dbname)
-   return  db.collection("datas")
-//    let data= await collection.find({}).toArray()
-//      console.log(data)
+    collection =db.collection("datas")
+   let data= await collection.find({}).toArray()
+     console.log(data)
 }
- module.exports=getconect
-
+ getdata()

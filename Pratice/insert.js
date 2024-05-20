@@ -1,12 +1,15 @@
-const getdata = require("./Mongodb");
+ const getconect=require("./mongodb")
 
-async function insertdata() {
-  let data = await getdata();
-  data.insertMany([
-    { name: "robo", year: 2009, categeory: "thrialar" },
-    { name: "rob2", year: 2013, categeory: "thrialar" },
-    { name: "kaidino1", year: 2020, categeory: "comady" },
-  ]);
-}
 
-insertdata();
+  const insertdata=async ()=>{
+  let data= await getconect()
+   data.insertMany(
+  [
+    {name:"14promax",brand:"apple",model:"iphone",year:"2023"},
+    {name:"15promax",brand:"apple",model:"iphone",year:"2024"},
+    {name:"16promax",brand:"apple",model:"iphone",year:"2025"},
+  ]
+
+   )
+  }
+   insertdata()
