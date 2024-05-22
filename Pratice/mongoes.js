@@ -42,7 +42,7 @@
  const find=async()=>{
      const datas= mongoose.model("datas",datasschema)
 
-      let data= await datas.find()
+      let data= await datas.find({name:"samsung altura plus"})
        console.log(data)
  }
   find()
